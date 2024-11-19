@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .mar{
+        height:35px;
+        width: 100%;
+     background-color: rgb(110, 110, 236);
+
+    }
+    .mar h2 marquee{
+        color: red;
+    }
+    #navbar{
+        height: 150px;
+        width: 100%;
+        background-color: rgb(126, 126, 201);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+     #navbar .logo{
+        margin-left: 2%;
+    }
+    #navbar .logo:hover{
+        background-color: rgb(28, 28, 231);
+        border-radius: 65px;
+    }
+    #navbar ul{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        list-style: none;
+    }
+    #navbar ul li a{
+        color:white;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: 500;
+        padding: 10px;
+    }
+    #navbar ul li a:hover{
+        background-color: white;
+        color: black;
+        font-weight: 500;
+        transition: 1s;
+        border-radius:38%;
+    }
+    #sb{
+        width: 300px;
+        height: 25px;
+    }
+    #sb :hover{
+        background-color: black;
+        color:black;
+        transition: 1s;
+    }
+    #btn{
+        height: 25px;
+        width: 50px;
+        margin: 3px;
+    }
+</style>
+ <body>
+   <div class="mar">
+   <h2> <marquee behavior="scroll" direction="left" scrollamount="15">about</marquee></h2>
+   </div>
+   
+
+    <nav id="navbar">
+        <div class="logo">
+            <img src="/bmw project 2/bmw logo.png" alt="bmw logo" title="logo" height="100px" width="150px">
+
+        </div>
+        <ul>
+            <li><a href="index.html">index</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="tamplates.html">Tamplates</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div>
+            <input type="search" placeholder=".......search......." id="sb">
+            <input type="button" value="search" id="btn">
+        </div>  
+    </nav>
+</body>
+</html>
